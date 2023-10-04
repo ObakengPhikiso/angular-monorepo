@@ -1,0 +1,19 @@
+<div class="custom-card card" [routerLink]="['artist', artist.id]" routerLinkActive="router-link-active"
+    [state]="artist" *ngIf="artist && !artist_view">
+    <img [src]="artist.picture_xl" class="img img-responsive">
+    <div class="name">{{artist.name}}</div>
+    <div class="card-footer">
+        <div class="d-flex justify-content-between">
+            <div class="lead">{{artist.nb_fan| numberFormatter}} Fans</div>
+            <div class="lead">{{artist.nb_album}} Albums</div>
+        </div>
+    </div>
+</div>
+
+<div class="card" id="artist-card" *ngIf="artist && artist_view">
+    <img [src]="artist.picture_xl" class="card-img-top">
+    <div class="card-img-overlay text-white">
+        <h1 class="card-title display-5">{{artist.name}}</h1>
+        <p class="card-text"><u>{{artist.nb_fan| numberFormatter}} Fans</u></p>
+    </div>
+</div>

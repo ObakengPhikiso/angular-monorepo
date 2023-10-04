@@ -1,0 +1,13 @@
+<ul class="list-group" *ngIf="tracks.length > 0">
+    <h1 class="display-5 text-white">Top 5 tracks</h1>
+    <li class="list-group-item" *ngFor="let track of tracks">
+        <div class="row">
+            <div class="col-8">
+                {{track.title}}
+            </div>
+            <div class="col">
+                {{track.duration | convertTime}}
+            </div>
+        </div>
+    </li>
+</ul>

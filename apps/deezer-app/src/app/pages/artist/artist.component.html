@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div class="row mt-4">
+        <div class="col-lg-7 col-xl-7 col-sm-12 col-md-12">
+            <angular-monorepo-artist-card [artist]="artist" [artist_view]="true"></angular-monorepo-artist-card>
+        </div>
+        <div class="col-lg-5 col-xl-5 col-sm-12 col-md-12">
+            <angular-monorepo-top-tracks [tracks]="top5"></angular-monorepo-top-tracks>
+        </div>
+    </div>
+
+    <div class="container" *ngIf="albums.length > 0">
+        <h1 class="display-4 text-white">Albums</h1>
+        <div class="row">
+            <div class="col" *ngFor="let album of albums">
+                <angular-monorepo-album-card [album]="album"></angular-monorepo-album-card>
+            </div>
+        </div>
+    </div>
+
+</div>

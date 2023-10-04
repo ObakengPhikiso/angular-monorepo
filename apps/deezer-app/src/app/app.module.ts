@@ -1,17 +1,30 @@
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
+
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { appRoutes } from './app.routes';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { ComponentsModule } from './components/components.module';
+import { LoaderInterceptor } from './interceptors/loader.interceptor';
+import { NavbarComponent } from './layouts/navbar/navbar.component';
+
 
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+  ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
+    AppRoutingModule,
+    ComponentsModule,
+    HttpClientModule
   ],
-  providers: [],
-  bootstrap: [AppComponent],
+  providers: [{
+    provide: HTTP_INTERCEPTORS,
+    useClass: LoaderInterceptor,
+    multi: true,
+  },],
+  bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

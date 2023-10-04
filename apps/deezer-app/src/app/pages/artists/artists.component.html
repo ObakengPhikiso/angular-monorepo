@@ -1,0 +1,8 @@
+<div class="container" *ngIf="artists.length > 0">
+    <div class="row">
+        <h1 class="display-4 text-white">Artists</h1>
+        <div class="col" *ngFor="let artist of artists">
+            <angular-monorepo-artist-card [artist]="artist"></angular-monorepo-artist-card>
+        </div>
+    </div>
+</div>

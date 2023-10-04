@@ -1,0 +1,9 @@
+#artist-card {
+    height: 30vh !important;
+
+   & .card-img-top {
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+}
+}

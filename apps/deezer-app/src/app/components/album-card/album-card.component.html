@@ -1,0 +1,7 @@
+<div class="custom-card card" routerLinkActive="router-link-active"><img [src]="album.cover_xl"
+        class="img img-responsive" *ngIf="album">
+    <div class="name">{{album.title}}</div>
+    <div class="card-footer">
+        <div class="lead">{{album.release_date | date: 'YYYY'}}</div>
+    </div>
+</div>
