@@ -2,11 +2,13 @@
     <h1 class="display-5 text-white">Top 5 tracks</h1>
     <li class="list-group-item" *ngFor="let track of tracks">
         <div class="row">
-            <div class="col-8">
+            <div class="col-4">
                 {{track.title}}
             </div>
-            <div class="col">
-                {{track.duration | convertTime}}
+            <div class="col-8">
+                <audio controls>
+                    <source [src]="track.preview" type="audio/mpeg">
+                  </audio>
             </div>
         </div>
     </li>
