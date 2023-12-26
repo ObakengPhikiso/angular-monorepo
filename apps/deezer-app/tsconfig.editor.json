@@ -1,6 +1,6 @@
 {
   "extends": "./tsconfig.json",
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*.ts", "../../shared/interfaces/src/lib/shared/album.ts", "../../shared/interfaces/src/lib/shared/artist.ts", "../../shared/interfaces/src/lib/shared/track.ts", "../../shared/helper-services/src/lib/shared/loader.service.ts", "../../shared/core-data/src/lib/shared/api.service.ts", "../../shared/environments/src/lib/shared/environment.development.ts", "../../shared/environments/src/lib/shared/environment.ts", "../../shared/interceptors/src/lib/shared/loader.interceptor.ts"],
   "compilerOptions": {
     "types": ["jest", "node"]
   }

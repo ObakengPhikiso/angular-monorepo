@@ -14,7 +14,22 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@angular-monorepo/shared/core-data": ["shared/core-data/src/index.ts"],
+      "@angular-monorepo/shared/environments": [
+        "shared/environments/src/index.ts"
+      ],
+      "@angular-monorepo/shared/helper-services": [
+        "shared/helper-services/src/index.ts"
+      ],
+      "@angular-monorepo/shared/interceptors": [
+        "shared/interceptors/src/index.ts"
+      ],
+      "@angular-monorepo/shared/interfaces": ["shared/interfaces/src/index.ts"],
+      "@angular-monorepo/shared/ui-components": [
+        "shared/ui-components/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

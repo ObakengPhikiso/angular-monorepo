@@ -53,8 +53,8 @@
           "namedChunks": true,
           "fileReplacements": [
             {
-              "replace": "apps/deezer-app/src/environments/environment.ts",
-              "with": "apps/deezer-app/src/environments/environment.development.ts"
+              "replace": "shared/environments/src/lib/shared/environment.ts",
+              "with": "shared/environments/src/lib/shared/environment.development.ts"
             }
           ]
         }

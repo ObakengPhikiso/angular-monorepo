@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ArtistRoutingModule } from './artist-routing.module';
 import { ArtistComponent } from './artist.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ComponentsModule } from '../../components/components.module';
+import { SharedUiComponentsModule } from '@angular-monorepo/shared/ui-components';
 
 
 
@@ -17,7 +17,7 @@ import { ComponentsModule } from '../../components/components.module';
     CommonModule,
     ArtistRoutingModule,
     HttpClientModule,
-    ComponentsModule
+    SharedUiComponentsModule
   ],
   providers: []
 })

@@ -1,9 +1,8 @@
+import { ApiService } from '@angular-monorepo/shared/core-data';
+import { Artist, Track, Album } from '@angular-monorepo/shared/interfaces';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Album } from '../../interfaces/album';
-import { Artist } from '../../interfaces/artist';
-import { Track } from '../../interfaces/track';
-import { ApiService } from '../../services/api.service';
+
 
 
 @Component({

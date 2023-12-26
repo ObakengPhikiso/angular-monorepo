@@ -2,7 +2,7 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ArtistsComponent } from './artists.component';
-import { ApiService } from '../../services/api.service';
+import { ApiService } from '../../../../../../shared/core-data/src/lib/shared/api.service';
 
 describe('ArtistsComponent', () => {
   let component: ArtistsComponent;

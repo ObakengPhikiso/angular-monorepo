@@ -1,14 +1,14 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ApiService } from './api.service';
+import { ApiService } from '../../../../../shared/core-data/src/lib/shared/api.service';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing'
 import { albums } from '../mock/albums_mock';
 import { artists, mockArtist1 } from '../mock/artists_mock';
-import { Artist } from '../interfaces/artist';
-import { Album } from '../interfaces/album';
-import { Track } from '../interfaces/track';
+import { Artist } from '../../../../../shared/interfaces/src/lib/shared/artist';
+import { Album } from '../../../../../shared/interfaces/src/lib/shared/album';
+import { Track } from '../../../../../shared/interfaces/src/lib/shared/track';
 import { top5List } from '../mock/top5_mock';
-import { environment } from '../../environments/environment';
+import { environment } from '../../../../../shared/environments/src/lib/shared/environment';
 
 
 describe('ApiService', () => {

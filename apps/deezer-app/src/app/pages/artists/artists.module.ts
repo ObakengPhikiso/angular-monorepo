@@ -4,8 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ArtistsRoutingModule } from './artists-routing.module';
 import { ArtistsComponent } from './artists.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ComponentsModule } from '../../components/components.module';
-
+import { SharedUiComponentsModule } from '@angular-monorepo/shared/ui-components';
 
 @NgModule({
   declarations: [
@@ -15,7 +14,7 @@ import { ComponentsModule } from '../../components/components.module';
     CommonModule,
     ArtistsRoutingModule,
     HttpClientModule,
-    ComponentsModule
+    SharedUiComponentsModule
   ],
   providers: []
 })

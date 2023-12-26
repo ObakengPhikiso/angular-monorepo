@@ -4,8 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ComponentsModule } from './components/components.module';
-import { LoaderInterceptor } from './interceptors/loader.interceptor';
+import { SharedUiComponentsModule } from '@angular-monorepo/shared/ui-components';
+import {LoaderInterceptor} from '@angular-monorepo/shared/interceptors'
 import { NavbarComponent } from './layouts/navbar/navbar.component';
 
 
@@ -17,7 +17,7 @@ import { NavbarComponent } from './layouts/navbar/navbar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ComponentsModule,
+    SharedUiComponentsModule,
     HttpClientModule
   ],
   providers: [{

@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { LoaderInterceptor } from './loader.interceptor';
+import { LoaderInterceptor } from '../../../../../shared/interceptors/src/lib/shared/loader.interceptor';
 
 describe('LoaderInterceptor', () => {
   beforeEach(() => TestBed.configureTestingModule({

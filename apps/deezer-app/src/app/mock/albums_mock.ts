@@ -1,4 +1,4 @@
-import { Album } from "../interfaces/album";
+import { Album } from "../../../../../shared/interfaces/src/lib/shared/album";
 
 const mockAlbum1: Album = {
     id: 7975372,

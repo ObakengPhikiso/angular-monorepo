@@ -1,6 +1,7 @@
+import { ApiService } from '@angular-monorepo/shared/core-data';
+import { Artist } from '@angular-monorepo/shared/interfaces';
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Artist } from '../../interfaces/artist';
-import { ApiService } from '../../services/api.service';
+
 
 
 @Component({

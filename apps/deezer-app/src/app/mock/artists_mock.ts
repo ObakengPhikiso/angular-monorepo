@@ -1,4 +1,4 @@
-import { Artist } from "../interfaces/artist";
+import { Artist } from "../../../../../shared/interfaces/src/lib/shared/artist";
 
 const mockArtist1: Artist = {
     id: 892,

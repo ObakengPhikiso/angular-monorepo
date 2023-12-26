@@ -1,4 +1,4 @@
-import { Track } from "../interfaces/track"
+import { Track } from "../../../../../shared/interfaces/src/lib/shared/track"
 
 const top5_Mock1: Track = {
     "id": 3157972,
